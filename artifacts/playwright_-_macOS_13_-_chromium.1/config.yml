@@ -1,0 +1,28 @@
+apiVersion: v1alpha
+kind: playwright
+showConsoleLog: false
+sauce:
+  region: us-west-1
+  concurrency: 100
+  sauceignore: .sauceignore
+  # tunnel:
+  #   name: maxwellnewsom_tunnel_name
+playwright:
+  version: package.json
+  configFile: playwright.config.js
+roodDir: ./
+suites:
+- name: playwright - macOS 13 - chromium
+  testMatch:
+  - .*.js
+  platformName: macOS 13
+  params:
+    browserName: chromium
+    project: chromium
+rootDir: .
+artifacts:
+  download:
+    match:
+    - '*'
+    when: fail
+    directory: ./artifacts
