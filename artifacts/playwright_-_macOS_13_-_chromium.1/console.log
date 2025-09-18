@@ -1,5 +1,0 @@
-Sauce Playwright Runner 2.35.0
-Running Playwright 1.49.0
-Error: Could not find playwright config file: '/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.35.0/bundle/__project__/playwright.config.js'
-    at runPlaywright (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.35.0/bundle/lib/playwright-runner.js:230:19)
-    at run (/Volumes/Sauce/saucectl-runners/sauce-playwright-runner/2.35.0/bundle/lib/playwright-runner.js:199:26)
